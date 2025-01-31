@@ -1,0 +1,153 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Cherry Blossom styles */
+.cherry-blossom {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff6a00;
+  border-radius: 50%;
+  animation: fall 5s ease-in infinite;
+}
+
+@keyframes fall {
+  0% {
+    top: -10px;
+    opacity: 1;
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+  }
+}
+
+/* Container and layout */
+.app-container {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+/* Title */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fffae6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 80%;
+  margin: 10px auto;
+  background: #fff;
+  color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 100, 0, 0.6);
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 12px;
+  font-size: 20px;
+  background: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ee0979;
+}
+
+/* Love Cursor */
+.love-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: #ff6a00;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 9999;
+}
+
+/* Result section */
+.result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fffae6;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fffae6;
+}
+
+/* History section */
+.history {
+  margin-top: 40px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.history-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.history-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul {
+  list-style-type: none;
+}
